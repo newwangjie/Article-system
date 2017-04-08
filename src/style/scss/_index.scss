@@ -1,0 +1,143 @@
+.content-container{
+  position: absolute;
+  top: 40px;
+  left:201px;
+  width:85.2%;
+}
+.main-tool{
+  padding: 0 20px;
+  height: 35px;
+  background: #E5E9F2;
+}
+.home{
+  padding: 10px;
+}
+.main-tool-hellow{
+  line-height: 35px;
+  color: #20A0FF;
+}
+.content-form{
+  margin: 20px;
+}
+.content-form-item{
+  margin-bottom: 20px;
+}
+.form-item__label{
+  text-align: right;
+  float: left;
+  font-size: 14px;
+  color: #48576a;
+  line-height: 1;
+  padding: 11px 12px 11px 0;
+  width: 80px;
+}
+.form-item__content{
+  margin-left: 100px;
+  line-height: 36px;
+    position: relative;
+    font-size: 14px;
+}
+.input__inner{
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #bfcbd9;
+    color: #1f2d3d;
+    display: block;
+    height: 30px;
+    line-height: 1;
+    padding: 3px 10px;
+    width: 400px;
+}
+.con-input{
+  position: relative;
+  font-size: 14px;
+  display: inline-block;
+}
+.w400{
+  width: 400px !important;
+}
+.seach-box{
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #bfcbd9;
+  color: #1f2d3d;
+  display: block;
+  height: 30px;
+  width: 200px;
+}
+.con-checkbox{
+  margin-right: 20px;
+}
+.con-checkbox__input{
+    cursor: pointer;
+    display: inline-block;
+}
+.con-checkbox__inner{
+  display: inline-block;
+  position: relative;
+  border: 1px solid #bfcbd9;
+  border-radius: 4px;
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+}
+.check{
+  border: 1px solid #bfcbd9;
+  border-radius: 4px;
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.con-checkbox__label{
+  margin-right: 15px;
+}
+.radio{
+  border: 1px solid #bfcbd9;
+  border-radius: 4px;
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+}
+.textarea__inner{
+    display: block;
+    resize: vertical;
+    padding: 5px 7px;
+    width: 400px;
+    line-height: 1.5;
+    color: #1f2d3d;
+    background-color: #fff;
+    background-image: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 0px;
+     margin-bottom: 0px;
+     height: 100px;
+     box-shadow: 0 0 0 1px #ddd inset, 0 0 0 1px rgba(255, 255, 255, 0.5) inset, 0 0 8px #ddd inset;
+}
+.textarea__inner:hover{
+  box-shadow: 0 0 0 1px #13CE66 inset, 0 0 0 2px rgba(255, 255, 255, 0.5) inset, 0 0 8px #13CE66 inset;
+}
+.textarea__inner:focus{
+  box-shadow: 0 0 0 1px #20A0FF inset, 0 0 0 2px rgba(255, 255, 255, 0.5) inset, 0 0 8px #20A0FF inset;
+}
+.con-button{
+    line-height: 1;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    margin: 0;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    border-color: #01549b;
+    color: #fff;
+   background-color: #0275d8;
+    border-color: #0275d8;
+}
+.con-button:hover{
+  color: #fff;
+  background-color: #025aa5;
+  border-color: #01549b;
+  transition: .3s;
+}

@@ -1,0 +1,73 @@
+.head{
+  height: 40px;
+  line-height: 30px;
+  width: 100%;
+  background-color: #33AECC;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+.head-logo{
+  float: left;
+  margin-left: 30px;
+}
+.head-logo span{
+  color: #fff;
+  font-size: 20px;
+  line-height: 37px;
+}
+.head-logo i{
+  color: #fff;
+  font-size: 20px;
+}
+.head-right{
+  float: right;
+  line-height: 35px;
+  margin-right: 10px;
+}
+.head-right a{
+  color: #fff;
+}
+.head-right a:hover{
+  color: #FF8225;
+}
+.content-menu{
+  position: fixed;
+  top: 40px;
+  left: 0;
+  width: 200px;
+  height: auto;
+  display: block;
+  bottom: 0;
+  background-color: #eef1f6;
+  color: #333;
+  border-right: 1px solid #ddd;
+}
+.content-menu dl dt{
+  padding: 10px 15px;
+  background: #D3DCE6;
+  font-size: 14px;
+  color: #48576a;
+  cursor: pointer;
+}
+.content-menu dl dt:hover{
+  background-color: #d1dbe5;
+}
+.content-menu dl dd{
+  font-size: 14px;
+  color: #48576a;
+  cursor: pointer;
+  display: block;
+  border-bottom: 1px solid #D3DCE6;
+}
+.content-menu dl dd a{
+  padding: 10px 35px;
+  display: block;
+  color: #324057;
+}
+.content-menu dl dd:hover{
+  color: #20a0ff;
+}
+.content-menu dl dd:hover{
+  background-color: #d1dbe5;
+}

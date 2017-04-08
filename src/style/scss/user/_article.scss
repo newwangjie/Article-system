@@ -1,0 +1,212 @@
+.toolbar{
+  padding: 10px;
+  margin: 10px 0;
+}
+.main-tool-btn{
+  line-height: 52px;
+}
+.btn.add{
+    background: #13CE66;
+    color: #fff;
+    box-shadow: 0 0 0 1px #13cc65 inset;
+}
+.btn.add:hover{
+  color: #fff;
+  background: #11b95b;
+}
+.content-form-sea{
+  margin-left: 10px;
+}
+.zeng{
+  color: #fff;
+}
+.zeng:hover{
+  color: #fff;
+}
+.btn.save{
+    background: #20A0FF;
+    color: #fff;
+    box-shadow: 0 0 0 1px #1d9fff inset;
+}
+.btn.save a{
+  color: #fff;
+}
+.btn.save:hover{
+  background: #1a7ec8;
+}
+.btn{
+    display: inline-block;
+    margin-right: 4px;
+    padding: 5px 8px;
+    height: 18px;
+    line-height: 18px;
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px #D3DCE6 inset;
+    color: #475669;
+}
+.btn:hover{
+  color: #fff;
+  background: #FF8225;
+  transition: .3s;
+}
+.mini{
+    font-size: 12px;
+    padding: 5px 5px;
+    height: 12px;
+    line-height: 12px;
+    border-radius: 3px;
+    margin-right: 2px;
+}
+.mini.edit{
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+}
+.mini.edit:hover{
+  color: #fff;
+  background-color: #449d44;
+  border-color: #419641;
+  transition: .3s;
+}
+.mini.del{
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d9534f;
+}
+.mini.del:hover{
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #c12e2a;
+  transition: .3s;
+}
+.content-wrapper{
+  margin-top: 20px;
+}
+.toolbar .con-form-item{
+  margin-bottom: 0px;
+}
+.con-form-inline .con-form-item{
+  display: inline-block;
+  margin-right: 10px;
+}
+.con-form-item__cha{
+  line-height: 36px;
+  position: relative;
+  font-size: 14px;
+}
+.con-input__text{
+  background-color: #fff;
+  border-radius: 5px;
+  border: none;
+  color: #1f2d3d;
+  display: block;
+  height: 30px;
+  line-height: 1;
+  padding: 3px 10px;
+  width: 200px;
+  margin-right: 10px;
+  box-shadow: 0 0 0 1px #ddd inset, 0 0 0 1px rgba(255, 255, 255, 0.5) inset, 0 0 8px #ddd inset;
+}
+.con-input__text:hover{
+  box-shadow: 0 0 0 1px #13CE66 inset, 0 0 0 2px rgba(255, 255, 255, 0.5) inset, 0 0 8px #13CE66 inset;
+}
+.con-input__text:focus{
+  box-shadow: 0 0 0 1px #20A0FF inset, 0 0 0 2px rgba(255, 255, 255, 0.5) inset, 0 0 8px #20A0FF inset;
+}
+.input_submit{
+    display: inline-block;
+    border-radius: 5px;
+    border: none;
+    min-width: 55px;
+    outline: none;
+    font-size: 13px;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    padding: 8px 0;
+    height: 20px;
+    line-height: 16px;
+    background: #20A0FF;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 0 0 1px #20A0FF inset, 0 0 0 2px rgba(255, 255, 255, 0.3) inset, 0 0 8px #fff inset;
+}
+.input_submit:hover{
+    background: #13CE66;
+    box-shadow: 0 0 0 1px #13CE66 inset, 0 0 0 2px rgba(255, 255, 255, 0.3) inset, 0 0 8px #fff inset;
+    cursor: pointer;
+}
+.input_submit:active{
+    background: #20A0FF;
+    box-shadow: 0 0 0 1px #20A0FF inset, 0 0 0 2px rgba(255, 255, 255, 0.3) inset, 0 0 8px #fff inset;
+}
+.con-table{
+  width: 96%;
+  margin: 0 20px;
+}
+.w300{
+  width: 285px;
+}
+.dis{
+  display: inline-block !important;
+}
+.none{
+  display: none;
+}
+.table th{
+  border: 1px solid #D3DCE6;
+  padding: 10px 5px;
+  color: #1f2d3d;
+  background: #E5E9F2;
+  color: #324057;
+  font-size: 14px;
+}
+.table td{
+  border: 1px solid #dfe6ec;
+  padding: 10px 5px;
+  color: #1f2d3d;
+}
+.table tr:hover{
+  background: rgb(242, 242, 242);
+}
+.table tr{
+  text-align: center;
+}
+.pages{
+    background: #fff;
+    margin: 0 10px;
+    text-align: center;
+    color: #666;
+    height: 24px;
+    line-height: 24px;
+    padding: 30px 0 0;
+    position: absolute;
+    right: 20px;
+}
+.current{
+  border: 1px solid #20A0FF;
+  background: #20A0FF;
+  color: #fff;
+}
+.pages a{
+  display: inline-block;
+  font-size: 12px;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 8px;
+  border: 1px solid #D3DCE6;
+  margin-right: 2px;
+}
+.pages a:hover{
+  color: #475669;
+}
+.disable{
+    color: #D3DCE6 !important;
+    background: #EFF2F7 !important;
+    cursor: not-allowed;
+}
