@@ -2,6 +2,8 @@
 
 this is my fisrt demo
 
+this is 2
+
 > A Vue.js project
 
 ## Build Setup
