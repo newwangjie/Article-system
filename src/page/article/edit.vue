@@ -40,8 +40,6 @@
             <label class="form-item__label">内容</label>
             <div class="form-item__content"><div class="con-input"><textarea  v-model="lists.content"  class="textarea__inner"></textarea></div></div>
           </div>
-
-
           <div class="content-form-item">
             <div class="form-item__content">
               <button type="button" class="con-button"><span @click="getSubmit">立即保存</span></button>

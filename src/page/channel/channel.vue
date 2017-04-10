@@ -11,8 +11,8 @@
     <div class="toolbar">
       <div class="content-form-sea">
         <div class="con-form-item__cha">
-          <div class="con-input"><input placeholder="名称"  type="text" class="con-input__text"></div>
-          <input type="button" value="搜索" class="input_submit">
+          <div class="con-input"><input placeholder="名称" v-model="param.name" type="text" class="con-input__text"></div>
+          <input type="button" value="搜索" @click="goseach()" class="input_submit"/>
         </div>
       </div>
     </div>
@@ -31,6 +31,7 @@
           <td><router-link :to="'/channel/edit/'+item.id" class="mini edit">修改</router-link><a class="mini del" @click="getDel(item.id)">删除</a></td>
         </tr>
       </table>
+      <pagination :curr="param.page" :total="total" @returnPage="goPage"></pagination>
     </div>
   </section>
 </template>
@@ -39,7 +40,12 @@
 export default {
   data () {
     return {
-      list: {}
+      list: [],
+      param: {
+        name: '',
+        page: 1
+      },
+      total: 1
     }
   },
   created () {
@@ -47,8 +53,9 @@ export default {
   },
   methods: {
     getChannel () {
-      this.$api.get('channel', null, r => {
+      this.$api.get('channel', this.param, r => {
         this.list = r.data.list
+        this.total = r.data.total
         // console.log(this.list)
       })
     },
@@ -58,6 +65,14 @@ export default {
           this.getChannel()
         })
       }
+    },
+    goPage (e) {
+      this.param.page = e
+      this.getChannel()
+    },
+    goseach () {
+      this.param.page = 1
+      this.getChannel()
     }
   }
 }

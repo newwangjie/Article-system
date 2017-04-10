@@ -11,8 +11,8 @@
     <div class="toolbar">
       <div class="content-form-sea">
         <div class="con-form-item__cha">
-          <div class="con-input"><input placeholder="标题"  type="text" class="con-input__text"></div>
-          <input type="button" value="搜索" class="input_submit">
+          <div class="con-input"><input placeholder="标题"  v-model="param.title" type="text" class="con-input__text"></div>
+          <input type="button" value="搜索" @click="goSearch()" class="input_submit">
         </div>
       </div>
     </div>
@@ -35,26 +35,7 @@
           <td><router-link :to="'/article/edit/'+item.id" class="mini edit">修改</router-link><a class="mini del" @click="getDel(item.id)">删除</a></td>
         </tr>
       </table>
-      <!-- fenye -->
-      <!-- <div class="pages">
-        <template v-if="page > 1">
-          <a @click="getPage(1)">首页</a>
-          <a @click="getPage(page - 1)">上一页</a>
-        </template>
-        <template v-else>
-          <a class="disable">首页</a>
-          <a class="disable">上一页</a>
-        </template>
-         <a v-for="index in indexs()" :class="{'current' : index === page}" @click="getPage(index)">{{index}}</a>
-         <template v-if="page < Math.ceil(this.total / 10)">
-           <a @click="getPage(page + 1)">下一页</a>
-           <a @click="getmo()">末页</a>
-         </template>
-         <template v-else>
-           <a class="disable">下一页</a>
-           <a class="disable">末页</a>
-         </template> -->
-         <pagination :gopage="getPage" :total="this.total" :curr="this.page" ></pagination>
+         <pagination :curr="param.page" :total="total" @returnPage="goPage"></pagination>
       </div>
     </div>
 
@@ -67,9 +48,11 @@ export default {
     return {
       dat: {},
       list: [],
-      page: 1,
-      total: null,
-      zu: []
+      param: {
+        title: '',
+        page: 1
+      },
+      total: 1
     }
   },
   created () {
@@ -77,9 +60,7 @@ export default {
   },
   methods: {
     getData () {
-      this.$api.get('article', {
-        page: this.page
-      }, r => {
+      this.$api.get('article', this.param, r => {
         this.list = r.data.list
         this.total = r.data.total
         // console.log(this.total)
@@ -92,8 +73,12 @@ export default {
         })
       }
     },
-    getPage (i) {
-      this.page = i
+    goPage (e) {
+      this.param.page = e
+      this.getData()
+    },
+    goSearch () {
+      this.param.page = 1
       this.getData()
     }
   //   getPage (i) {
